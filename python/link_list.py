@@ -49,12 +49,12 @@ class LinkedList:
         current = self.head
         if self.head:
             # for current head element
-            if (current.value == value):
+            if current.value == value:
                 self.head = current.next
                 return
 
             while current.next:
-                if (current.next.value == value):
+                if current.next.value == value:
                     current.next = current.next.next
                     break
 
